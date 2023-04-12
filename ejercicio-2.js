@@ -29,7 +29,7 @@ let comida = "pizza"
     let edad = "40"
     let comida = "hamburguesa"
 
-    console.log("la variable global se puede leer aqui", nombre)
+    console.log("la variable global se puede leer aqui", nombre, " ", apellido)
     console.log("la variable global se puede leer aqui", apellido)
     console.log("la variable local se puede leer aqui", edad)
     console.log("la variable local se puede leer aqui", comida)
