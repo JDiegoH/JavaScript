@@ -1,14 +1,14 @@
-var pelicula="Interestelar"
+var pelicula="Interestelar";
 console.log("Variable película antes del bloque:", pelicula)
 
-let musica="Rock"
+let musica="Rock";
 console.log("Variable música antes del bloque:", musica)
 
 {
-    var pelicula="Matilda"
+    var pelicula="Matilda";
     console.log("Variable película en el bloque:", pelicula)
 
-    let musica="Salsa"
+    let musica="Salsa";
     console.log("Variable música en el bloque:", musica)
 
 }
@@ -17,17 +17,17 @@ console.log("Variable película despues del bloque:", pelicula)
 console.log("Variable música despues del bloque:", musica)
 
 
-var nombre = "Pepito"
-var apellido = "Perez"
+var nombre = "Pepito";
+var apellido = "Perez";
 
-let edad = "38"
-let comida = "pizza"
+let edad = "38";
+let comida = "pizza";
 
 {
-    var nombre = "Fulano"
-    var apellido = "de Tal"
-    let edad = "40"
-    let comida = "hamburguesa"
+    var nombre = "Fulano";
+    var apellido = "de Tal";
+    let edad = "40";
+    let comida = "hamburguesa";
 
     console.log("la variable global se puede leer aqui", nombre, " ", apellido)
     console.log("la variable global se puede leer aqui", apellido)
