@@ -11,6 +11,7 @@ const funcionExpresada = function(){
 
 funcionExpresada();
 
+
 /*Funciones anonimas autoejecutables (IIFE).
 Son funciones que se ejecutan al momento de crearlas. Su sintaxis es la siguiente:
 (function (parametros){//contenido de la funcion})(parametros);
@@ -26,8 +27,6 @@ console.log("----------Funciones anonimas autoejecutables (IIFE)-------------");
     c.log("Mi segunda funcion anonima autoejecutable (IIFE) con parametros");
 })(console);
 
-function nombre(c){
-    c.log("Mi segunda funcion anonima autoejecutable (IIFE) con parametros");
-}
-
-nombre(console);
+(function (x,y,z){
+    console.log(x+y+z);
+})(1,2,3);

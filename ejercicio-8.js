@@ -18,11 +18,11 @@ estoEsUnaFuncion();
 
 //Funcion declarada con parametros y valor de retorno
 
-function saludar(nombre, edad) {
-    return `Hola mi nombre es ${nombre} y mi edad es ${edad}`
+function saludar(nombre, edad, ciudad = "Bogota") {
+    return `Hola mi nombre es ${nombre} y mi edad es ${edad} y vivo en ${ciudad}`
 }
 
-console.log(saludar("Amparo", 39));
+console.log(saludar("Diego", 110,'medellin'));
 
 //Asignación de valores por defecto a una funciones
 
@@ -30,8 +30,8 @@ function carrera(nombre = "desconocido", carrera = "desconocido") {
     return console.log(`Hola, mi nombre es ${nombre} y estudié ${carrera}`)
 }
 
-carrera("Juan", "desarrollo de web")
-carrera(); //Cuando no se agrega parametro muestra el valor asignado en la funcion
+//carrera("Juan", "desarrollo de web")
+carrera(undefined,"sistemas"); //Cuando no se agrega parametro muestra el valor asignado en la funcion
 
 
 
@@ -56,9 +56,9 @@ function multiplicacion(a, b) {
 }
 
 let a = 5;
-let b = 0;
+let b = 10;
 
-let op = "div";
+let op = "suma";
 
 switch (op) {
     case "suma":
@@ -122,8 +122,8 @@ function triangulo (a,b){
     return (a*b)/2;
 }
 function areaCirculo ( radio ) {
-    const PI = 3.1416;
-    return PI * radio**2; //x^2
+    //const PI = 3.1416;
+    return (Math.PI * radio**2).toFixed(2); //x^2
 }
 function areaCuadrado(a,b){
     return a*b;
@@ -131,7 +131,6 @@ function areaCuadrado(a,b){
 
 ladoa = 15;
 ladob = 30;
-
 radio = 24;
 
 console.log(`El área de un cuadrado cuyos lados miden ${ladoa} y ${ladob} es de ${areaCuadrado(ladoa,ladob)}`)
