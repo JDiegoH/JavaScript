@@ -6,6 +6,7 @@ independientemente de donde se declaren se pueden ser llamadas desde cualquier p
 
 //Funcion declarada sin parametros y sin valor de retorno
 
+
 function estoEsUnaFuncion() {
     console.log("Uno")
     console.log("Dos")
@@ -18,18 +19,18 @@ estoEsUnaFuncion();
 
 //Funcion declarada con parametros y valor de retorno
 
-function saludar(nombre, edad, ciudad = "Bogota") {
-    return `Hola mi nombre es ${nombre} y mi edad es ${edad} y vivo en ${ciudad}`
+function saludar(nombre, edad) {
+    return `Hola mi nombre es ${nombre} y mi edad es ${edad}`
 }
 
-console.log(saludar("Diego", 110,'medellin'));
+console.log(saludar("Diego", 110));
 
 //Asignación de valores por defecto a una funciones
 
 function carrera(nombre = "desconocido", carrera = "desconocido") {
     return console.log(`Hola, mi nombre es ${nombre} y estudié ${carrera}`)
 }
-
+//carrera();
 //carrera("Juan", "desarrollo de web")
 carrera(undefined,"sistemas"); //Cuando no se agrega parametro muestra el valor asignado en la funcion
 
