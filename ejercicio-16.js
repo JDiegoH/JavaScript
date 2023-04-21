@@ -67,12 +67,12 @@ function manejo_de_errores(arreglo_de_numeros) {
             console.log(arreglo_de_numeros[i])
 
             if (isNaN(arreglo_de_numeros[i])) {
-                console.log(arreglo_de_numeros[i]);
                 throw new Error("Cuidado! No se reciben datos no numéricos. ");
             }
             if(arreglo_de_numeros[i] == 1){
                 throw new Error("Jaja XD");
             }
+            console.log(arreglo_de_numeros[i]);
         }
         
     } catch (error) {
