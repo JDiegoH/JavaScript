@@ -61,6 +61,8 @@ let b = 10;
 
 let op = "suma";
 
+
+
 switch (op) {
     case "suma":
         console.log(suma(a, b))

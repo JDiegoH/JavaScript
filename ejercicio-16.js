@@ -25,9 +25,12 @@ try {
     let suma = 15 + 99;
     console.log(`El resultado es ${resultado}`);
     //Variable resultado no definida
+
 } catch (err) {
     console.log('Hay un error!');
+    console.log(err);
 }
+
 
 /*Finally: Es el bloque de código que siempre se ejecuta al finalizar el try..catch*/
 
@@ -49,7 +52,7 @@ try {
 console.log("-----------------Personalización mensajes de error----------------------")
 
 try {
-    let numero = 'y'
+    let numero = 5
     if (isNaN(numero)) { //El metodo isNaN() evalua si la variable es de tipo numererico o no
         //Definición del nuevo mensaje de error  throw new Error()
         throw new Error("El caracter introducido no es un numero")
@@ -59,6 +62,8 @@ try {
     console.log(`Se produjo el siguiente ${error}`)
 }
 
+axy = 'y'
+console.log(isNaN(axy))
 
 function manejo_de_errores(arreglo_de_numeros) {
     try {
@@ -67,11 +72,12 @@ function manejo_de_errores(arreglo_de_numeros) {
             console.log(arreglo_de_numeros[i])
 
             if (isNaN(arreglo_de_numeros[i])) {
-                throw new Error("Cuidado! No se reciben datos no numéricos. ");
+                throw new Error("Cuidado! No se reciben datos numéricos. ");
             }
-            if(arreglo_de_numeros[i] == 1){
-                throw new Error("Jaja XD");
+            else if(arreglo_de_numeros[i] == 1){
+                throw new Error("En este código no se admiten los números 1");
             }
+
             console.log(arreglo_de_numeros[i]);
         }
         
