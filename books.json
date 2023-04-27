@@ -1,0 +1,10 @@
+{
+    "bookstore": [{
+    "book": {
+    "title": "Story about a True Man",
+    "author": "Arthur C. Clarke",
+    "price": 30,
+    "year": "1968"
+    }
+    }]
+}
