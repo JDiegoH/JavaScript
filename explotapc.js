@@ -18,7 +18,9 @@ let obj = JSON.parse(aObjeto);
 
 console.log(obj);
 
-let cocaColaName = obj.Productos[0].Nombre;
+let cocaColaName = obj.Productos[0].Valor.Valor_Compra;
+
+console.log(cocaColaName)
 
 let itemToPush = {
     "Nombre": "Galletas",
