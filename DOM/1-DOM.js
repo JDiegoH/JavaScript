@@ -119,7 +119,7 @@ let $contenidoHTML = `
 $nuevaImagen.classList.add("imagen");
 
 //Método que inserta contenido HTML dependiendo una posicion
-$nuevaImagen.insertAdjacentHTML("afterbegin", $contenidoHTML);
+$.nuevaImageninsertAdjacentHTML("afterbegin", $contenidoHTML);
 //Método que inserta un elemento dependiendo una posicion
 $selectorImagenes.insertAdjacentElement("beforeend", $nuevaImagen);
 //Método que inserta texto dependiendo una posicion
