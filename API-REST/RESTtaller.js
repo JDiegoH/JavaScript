@@ -7,7 +7,7 @@ d.addEventListener("submit", (e) => {
     const $response = d.querySelector(".contact-form-response")
     $form = d.querySelector(".form")
 
-    fetch("https://formsubmit.co/ajax/ajuanh@correo.udistrital.edu.co", {
+    fetch("https://formsubmit.co/ajax/jdiegohernandeza@gmail.com", {
         method: "POST",
         body: new FormData(e.target)
     })
